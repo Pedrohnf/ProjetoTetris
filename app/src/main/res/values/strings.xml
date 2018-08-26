@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ProjetoTetris</string>
+    <string name="todo">TODO</string>
+    <string name="novo_jogo">Novo Jogo</string>
+    <string name="configurar">Configurar</string>
+    <string name="continuar">Continuar</string>
+    <string name="peca">peca</string>
+    <string name="proximo">Proximo:</string>
+    <string name="pontua_o">Pontuação:</string>
+    <string name="t1">T1</string>
+    <string name="todo1">TODO1</string>
+    <string name="configura_o">Configuração</string>
+    <string name="im">IM</string>
+</resources>
