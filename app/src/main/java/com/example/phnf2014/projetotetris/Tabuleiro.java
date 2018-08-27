@@ -40,7 +40,6 @@ public class Tabuleiro extends AppCompatActivity {
             for (int j = 0; j < grade.getColumnCount(); j++) {
                 tab[i][j] = (ImageView) inflater.inflate(R.layout.inflar_tabuleiro_black, grade, false);
 
-
                 if (i == 0) {
                     tab[i][j].setImageResource(R.drawable.gray);
                     g[i][j] = 1;
@@ -54,7 +53,6 @@ public class Tabuleiro extends AppCompatActivity {
                     tab[i][j].setImageResource(R.drawable.gray);
                     g[i][j] = 1;
                 }
-
 
                 grade.addView(tab[i][j]);
 
