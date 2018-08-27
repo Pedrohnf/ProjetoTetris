@@ -3,7 +3,6 @@ package com.example.phnf2014.projetotetris;
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.GridLayout;
 import android.widget.ImageView;
@@ -28,7 +27,7 @@ public class Tabuleiro extends AppCompatActivity {
 
         tab = new ImageView[a][b];
 
-        grade = findViewById(R.id.tabuleiro);
+        grade = findViewById(R.id.mapa);
         TextView prox = findViewById(R.id.proximo);
         TextView pontos = findViewById(R.id.pontos);
 
@@ -41,6 +40,7 @@ public class Tabuleiro extends AppCompatActivity {
             for (int j = 0; j < grade.getColumnCount(); j++) {
                 tab[i][j] = (ImageView) inflater.inflate(R.layout.inflar_tabuleiro_black, grade, false);
 
+
                 if (i == 0) {
                     tab[i][j].setImageResource(R.drawable.gray);
                     g[i][j] = 1;
@@ -51,19 +51,16 @@ public class Tabuleiro extends AppCompatActivity {
                     tab[i][j].setImageResource(R.drawable.gray);
                     g[i][j] = 1;
                 }else if(j == b - 1){
-                   tab[i][j].setImageResource(R.drawable.gray);
+                    tab[i][j].setImageResource(R.drawable.gray);
                     g[i][j] = 1;
                 }
+
 
                 grade.addView(tab[i][j]);
 
             }
 
         }
-
-        Log.i("deb", "Tamanho de linhas: " + grade.getRowCount());
-        Log.i("deb", "Tamanho de colunas: " + grade.getColumnCount());
-        Log.i("imagem", "Tamanho de colunas: " + grade.getColumnCount());
 
     }
 

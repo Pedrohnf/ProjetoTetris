@@ -10,20 +10,21 @@
     <TextView
         android:id="@+id/pontos"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="35dp"
         android:layout_marginBottom="43dp"
         android:layout_marginEnd="66dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="66dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="36dp"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/holo_blue_dark"
         android:text="Pontos:"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tabuleiro"
+        app:layout_constraintBottom_toTopOf="@+id/mapa"
         app:layout_constraintEnd_toStartOf="@+id/proximo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/proximo"
@@ -36,13 +37,13 @@
         android:background="@android:color/holo_blue_dark"
         android:text="@string/proximo"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/tabuleiro"
+        app:layout_constraintBottom_toTopOf="@+id/mapa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/pontos"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <android.support.v7.widget.GridLayout
-        android:id="@+id/tabuleiro"
+    <android.widget.GridLayout
+        android:id="@+id/mapa"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginBottom="92dp"
@@ -55,6 +56,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/proximo">
 
-    </android.support.v7.widget.GridLayout>
+    </android.widget.GridLayout>
 
 </android.support.constraint.ConstraintLayout>
