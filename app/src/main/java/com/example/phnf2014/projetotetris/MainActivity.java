@@ -3,10 +3,8 @@ package com.example.phnf2014.projetotetris;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
-import android.widget.GridLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button novoJovo = findViewById(R.id.NovoJogo);
         Button continuar = findViewById(R.id.Continuar);
-        Button configurar = findViewById(R.id.Configurar);
+        Button configurar = findViewById(R.id.Config);
 
 
         novoJovo.setOnClickListener(new View.OnClickListener() {

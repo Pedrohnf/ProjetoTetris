@@ -4,11 +4,12 @@
     <string name="novo_jogo">Novo Jogo</string>
     <string name="configurar">Configurar</string>
     <string name="continuar">Continuar</string>
-    <string name="peca">peca</string>
     <string name="proximo">Proximo:</string>
-    <string name="pontua_o">Pontuação:</string>
-    <string name="t1">T1</string>
-    <string name="todo1">TODO1</string>
+    <string name="pontos">Pontos:</string>
+    <string name="recorde">Recorde:</string>
     <string name="configura_o">Configuração</string>
-    <string name="im">IM</string>
+    <string name="configura_o1">Configuração</string>
+    <string name="quantidade_de_pe_as">Quantidade de Peças:</string>
+    <string name="n_vel">Nível:</string>
+    <string name="salvar">Salvar</string>
 </resources>

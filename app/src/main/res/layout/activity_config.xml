@@ -8,53 +8,53 @@
     tools:layout_editor_absoluteY="25dp">
 
     <TextView
-        android:id="@+id/config"
+        android:id="@+id/Configuração"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginRight="25dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        android:text="@string/configura_o"
+        android:layout_marginBottom="54dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginLeft="71dp"
+        android:layout_marginRight="71dp"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="55dp"
+        android:text="@string/configura_o1"
         android:textSize="38sp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_marginBottom="35dp"
-        android:layout_marginLeft="37dp"
-        android:layout_marginStart="37dp"
-        android:text="Quantidade de Peças:"
+        android:layout_marginBottom="37dp"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:text="@string/quantidade_de_pe_as"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/qtdPecas"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/config" />
+        app:layout_constraintTop_toBottomOf="@+id/Configuração" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="124dp"
+        android:layout_width="84dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="19dp"
-        android:text="Nível:"
+        android:layout_marginBottom="46dp"
+        android:text="@string/n_vel"
         android:textSize="30sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/qtdPecas" />
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup1" />
 
     <RadioGroup
         android:id="@+id/radioGroup2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="29dp"
         android:layout_marginLeft="29dp"
         android:layout_marginRight="29dp"
@@ -92,73 +92,53 @@
             android:textSize="25sp" />
     </RadioGroup>
 
+    <Button
+        android:id="@+id/salvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="31dp"
+        android:text="@string/salvar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
     <RadioGroup
-        android:id="@+id/qtdPecas"
-        android:layout_width="0dp"
+        android:id="@+id/radioGroup1"
+        android:layout_width="319dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="44dp"
-        android:layout_marginEnd="14dp"
-        android:layout_marginLeft="14dp"
-        android:layout_marginRight="14dp"
-        android:layout_marginStart="14dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <RadioButton
-            android:id="@+id/Numero2"
+            android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="2" />
+            android:text="2"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="672dp" />
 
         <RadioButton
-            android:id="@+id/Numero3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="3" />
-
-        <RadioButton
-            android:id="@+id/Numero4"
+            android:id="@+id/radioButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="4" />
 
         <RadioButton
-            android:id="@+id/Numero5"
+            android:id="@+id/radioButton7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="5" />
-
-        <RadioButton
-            android:id="@+id/Numero6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="6" />
-
-        <RadioButton
-            android:id="@+id/Numero7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="7" />
+            android:text="7"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="267dp" />
     </RadioGroup>
-
-    <Button
-        android:id="@+id/salvar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="54dp"
-        android:text="Salvar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
 
 </android.support.constraint.ConstraintLayout>

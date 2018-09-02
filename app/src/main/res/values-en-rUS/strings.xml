@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ProjetoTetris</string>
+    <string name="novo_jogo">New Game</string>
+    <string name="configurar">Setting</string>
+    <string name="continuar">Continue</string>
+    <string name="proximo">Next</string>
+    <string name="pontos">Points:</string>
+    <string name="recorde">Record:</string>
+    <string name="configura_o">Setting</string>
+    <string name="configura_o1">Setting</string>
+    <string name="quantidade_de_pe_as">Number of Pieces:</string>
+    <string name="n_vel">Level:</string>
+    <string name="salvar">Save</string>
+</resources>
